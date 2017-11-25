@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const requestPromise = require('request-promise')
 const request= require('request')
 
-for (let i=1; i<=1914; i++) {
+for (let i=1; i<=1920; i++) {
   requestPromise(`https://xkcd.com/${i}/`)
     .then(html => {
       let $ = cheerio.load(html)
