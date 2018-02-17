@@ -1,7 +1,7 @@
-const fs = require('fs')
+const fs = require('fse')
 const cheerio = require('cheerio')
 const requestPromise = require('request-promise')
-const request= require('request')
+const request = require('request')
 
 for (let i=4; i<=8; i++) {
   requestPromise(`https://xkcd.com/${i}/`)
